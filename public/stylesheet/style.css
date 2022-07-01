@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+.body{
+    height: 99vh;
+}
+
+.sec{
+    background: beige
+}
+
+.active{
+    background-color: rgba(0,0,0,0.1);
+}

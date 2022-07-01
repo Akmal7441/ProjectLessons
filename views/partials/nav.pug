@@ -1,0 +1,16 @@
+nav
+    .nav-wrapper
+        a.brand-logo(href='/') Online lessons 
+        ul#nav-mobile.right.hide-on-med-and-down
+            li
+                if isLessons 
+                    a(href='/api/lessons' class="active") All lessons
+                else 
+                    a(href='/api/lessons') All lessons    
+            li
+                if isLessonAdd  
+                    a(href='/api/lessons/add' class="active") Add lessons
+                else 
+                    a(href='/api/lessons/add') Add lessons 
+            li
+                a(href='/contact') Contact

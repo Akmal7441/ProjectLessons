@@ -1,0 +1,39 @@
+extends layouts/layout
+block  content 
+    //- form.col.s12(action=`/api/lessons/update/${update.id}` method="PUT")
+    //-     .row
+    //-         .input-field.col.s6
+    //-             input#name1.validate(type='text' name="name1" value= update.name)
+    //-             label(for='name1') Name 
+    //-         .input-field.col.s6
+    //-             input#author1.validate(type='text' name="author1" value= update.author)
+    //-             label(for='author1') Author
+    //-         .input-field.col.s6
+    //-             input#price1.validate(type='text' name="price1" value= update.price)
+    //-             label(for='price1') Price
+    //-         .input-field.col.s6
+    //-             input#img1.validate(type='text' name="img1" value= update.img)
+    //-             label(for='img1')  Img 
+    //-         .input-field.col.s6
+    //-             input#year1.validate(type='number' name="year1" value= update.year)
+    //-             label(for='year1') Year
+    //-     button(class="waves-effect waves-light btn")  Create          
+    form(action=`/api/lessons/update/${update.id}` method="POST") 
+        .row
+            .input-field.col.s6
+                input#name1.validate(type='text' name="name" value= update.name)
+                label(for='name1') Name 
+            .input-field.col.s6
+                input#author1.validate(type='text' name="author" value= update.author)
+                label(for='author1') Author
+            .input-field.col.s6
+                input#price1.validate(type='text' name="price" value= update.price)
+                label(for='price1') Price
+            .input-field.col.s6
+                input#img1.validate(type='text' name="img" value= update.img)
+                label(for='img1')  Img 
+            .input-field.col.s6
+                input#year1.validate(type='number' name="year" value= update.year)
+                input#iddd.validate(type='hidden' name="id" value= update.id)
+                label(for='year1') Year
+        button(class="waves-effect waves-light btn" type="submit")  Create          
